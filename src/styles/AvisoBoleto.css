@@ -1,0 +1,90 @@
+* {
+  padding: 5px;
+  margin: 5px;
+}
+.aviso-boleto {
+  background-color: #00a75d;  
+}
+
+.container-box {
+  color: azure;
+  background-color: #6e7885;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  /* inicio do grid */
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 'r1 r1' 'r2 r3' 'b b';
+}
+
+.container-box div {
+  background-color: slateblue;
+  /*inicio do flex*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-box  div  label {
+  background-color: #c395ff;
+  width: 100px;
+}
+
+.row > input {
+  background-color: #f0ffff;
+  border-radius: 5px;
+  padding: 5px;
+  font-style: italic;
+  
+}
+
+.row-1 {
+  grid-area: r1;
+}
+
+.row-2 {
+  grid-area: r2;
+}
+
+.row-3 {
+  grid-area: r3;
+}
+
+Button {
+  background-color: #3a404a;
+  color: azure;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  border: none;
+  min-width: max-content;
+  width: 100px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-self: center;
+  grid-area: b;
+}
+
+button:hover {
+  background-color: azure;
+  color: #3a404a;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.aviso-boleto p {
+  background-color: gray;
+  color: azure;
+}
+
+h3 {
+  background-color: #c395ff;
+}
+
+/* commentario */
