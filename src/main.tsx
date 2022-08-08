@@ -1,13 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './components/App'
-import AvisoBoleto from './components/AvisoBoleto'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./components/App";
 
-import './styles/index.css'
+import "./styles/index.css";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />    
-    <AvisoBoleto /> 
+    <App />
   </React.StrictMode>
-)
+);

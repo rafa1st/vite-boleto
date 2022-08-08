@@ -39,7 +39,14 @@ export default function AvisoBoleto() {
               onChange={handleChange}
               placeholder="Data da Emissão"
             />
-          
+            <label>Código: </label>
+            <input
+              type="number"
+              name="cod"
+              value={boleto.cod}
+              onChange={handleChange}
+              placeholder="Código"
+            />          
             <label>Fornecedor: </label>
             <input
               type="text"
@@ -68,14 +75,7 @@ export default function AvisoBoleto() {
             />
           </div>
           <div className="row-3">
-            <label>Código: </label>
-            <input
-              type="number"
-              name="cod"
-              value={boleto.cod}
-              onChange={handleChange}
-              placeholder="Código"
-            />
+            
             <label>Parcela: </label>
             <input
               type="text"
