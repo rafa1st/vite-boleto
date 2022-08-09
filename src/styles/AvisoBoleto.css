@@ -1,9 +1,7 @@
-* {
-  padding: 5px;
-  margin: 5px;
-}
 .aviso-boleto {
-  background-color: #00a75d;  
+  background-color: #00a75d;
+  padding: 0;
+  margin: 0;
 }
 
 .container-box {
@@ -33,7 +31,7 @@
   width: 100px;
 }
 
-.row > input {
+.row input {
   background-color: #f0ffff;
   border-radius: 5px;
   padding: 5px;

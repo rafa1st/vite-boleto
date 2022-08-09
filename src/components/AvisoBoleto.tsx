@@ -30,7 +30,7 @@ export default function AvisoBoleto() {
       <body>
         <h1>Cadastro de boletos</h1>
         <form className="container-box" onSubmit={handleSubmit}>
-          <div className="row-1">
+          <div>
             <label>Emissão: </label>
             <input
               type="date"
@@ -39,6 +39,8 @@ export default function AvisoBoleto() {
               onChange={handleChange}
               placeholder="Data da Emissão"
             />
+          </div>
+          <div className="row-2">
             <label>Código: </label>
             <input
               type="number"
@@ -55,8 +57,6 @@ export default function AvisoBoleto() {
               onChange={handleChange}
               placeholder="Fornecedor"
             />
-          </div>
-          <div className="row-2">
             <label>Nota Fiscal: </label>
             <input
               type="number"
