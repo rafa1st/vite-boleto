@@ -48,7 +48,7 @@ export default function AvisoBoleto() {
               value={boleto.cod}
               onChange={handleChange}
               placeholder="Código"
-            />          
+            />
             <label>Fornecedor:</label>
             <input
               type="text"
@@ -64,7 +64,7 @@ export default function AvisoBoleto() {
               value={boleto.nota}
               onChange={handleChange}
               placeholder="Nota Fiscal"
-            />          
+            />
             <label>Vencimento: </label>
             <input
               type="date"
@@ -75,7 +75,6 @@ export default function AvisoBoleto() {
             />
           </div>
           <div className="row-3">
-            
             <label>Parcela: </label>
             <input
               type="text"

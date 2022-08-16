@@ -14,7 +14,7 @@ const Header = () => {
             <li>item4</li>
           </ul>
         </nav>
-      </header>
+      </header>      
     )
 }
 
