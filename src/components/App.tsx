@@ -3,20 +3,22 @@ import AvisoBoleto from "./AvisoBoleto";
 import "../styles/App.css";
 import Footer from "./FooterPage";
 import Header from "./Header";
+import Login from "./login/Login";
 
 export default function App() {
   return (
     <div>
-      <Header />      
+      {/* <Header /> */}
+      <Login />
       <body>
-        <h3>Inicio do body do APP</h3>
+        {/* <h3>Inicio do body do APP</h3>
         <aside>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
           quidem, repudiandae iste adipisci nemo incidunt magni perferendis ad
           facere veniam laboriosam error eos nulla inventore nisi fugit
           voluptatibus voluptas ex!
         </aside>
-        <AvisoBoleto />
+        <AvisoBoleto /> */}
       </body>
       <Footer />
      

@@ -1,0 +1,18 @@
+body {
+    background-color: #dfe9f6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.login-frame {
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 600px;
+    width: 600px;
+    background-color: #fff;
+    text-align: center;
+    color: blue;
+}

@@ -5,7 +5,7 @@ const Header = () => {
         <header>
         <h3>inicio do header do app</h3>
         <nav className="nav-bar">
-          <menu>Menu</menu>
+          <div className="menu">Menu</div>
           <ul>
             <li>lista</li>
             <li>item1</li>
