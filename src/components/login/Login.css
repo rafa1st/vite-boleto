@@ -1,18 +1,64 @@
-body {
-    background-color: #dfe9f6;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h1 {
-    text-align: center;
+.login {
+  background-color: blue;
 }
 
 .login-frame {
-    box-sizing: border-box;
-    border-radius: 10px;
-    height: 600px;
-    width: 600px;
-    background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.right-side {
+  background-color: black;
+  color: ghostwhite;
+}
+
+.center-line {
+  border-left: 2px solid #bbb;
+  height: 300px;
+  align-items: center;
+  
+}
+
+.left-side {
+  background-color: aqua;
+  color: green;
+}
+
+.logo {
+    /* box-sizing: border-box; */
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side p {
     text-align: center;
-    color: blue;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    
+
 }

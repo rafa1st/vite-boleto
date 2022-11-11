@@ -1,4 +1,7 @@
-body {
-    height: 80vh;
+body {    
+    margin: auto;
+    padding: 0;
+    background-color: olive;
+    height: 1000px;
 }
 

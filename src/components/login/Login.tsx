@@ -1,23 +1,32 @@
 
-import '../login/Login.css'
+import "../login/Login.css";
 
-export default function Login () {
+export default function Login() {
+  return (
+    <div className="login">
+      <div className="login-frame">
+        <section className="right-side">
+          <p>right</p>
+          <div className="logo">logo</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            corporis voluptatem.
+          </p>
+        </section>
 
-return (
-    <div>
-        <h1>Login</h1>
-        <div className="login-frame">
-            <span className='right-side'>
-                <p>right</p>
-            </span>
+        <div className="center-line" />
 
-            <span className='left-side'>
-                <p>left</p>
-            </span>
+        <section className="left-side">
+            <h1>Login</h1>
+            <form action="">
+                <input type="text" placeholder="Insira seu nome"/>
+                <input type="password" name="password" id="password" placeholder="Insira sua senha"/>
+                <button>Login</button>
+            </form>
+            
 
-        </div>
-        
+        </section>
+      </div>
     </div>
-)
-
+  );
 }

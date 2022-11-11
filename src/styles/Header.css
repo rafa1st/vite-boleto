@@ -3,6 +3,7 @@ header {
   margin: 0;
   background-color: #dfe9f6;
   color: darkslategray;
+  height: 50px;
 }
 .nav-bar {
   background-color: #cfa8e0;
@@ -16,7 +17,6 @@ header {
   background-color: #7e1f1c;
   text-align: center;
   min-width: 5vw;
-  height: 50px;
   cursor: pointer;
 }
 
