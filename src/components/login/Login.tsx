@@ -11,6 +11,10 @@ return (
                 <p>right</p>
             </span>
 
+            <span className='left-side'>
+                <p>left</p>
+            </span>
+
         </div>
         
     </div>
