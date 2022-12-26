@@ -1,8 +1,3 @@
-.aviso-boleto {
-  background-color: #00a75d;
-  padding: 0;
-  margin: 0;
-}
 
 .container-box {
   color: azure;
@@ -19,42 +14,19 @@
 }
 
 .container-box div {
-  background-color: slateblue;
+  
   /*inicio do flex*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .container-box  div  label {
   background-color: #c395ff;
-  width: 100px;
+  width: 300px;
 }
-
-.row input {
-  background-color: #3ac7c7;
-  border-radius: 5px;
-  padding: 5px;
-  font-style: italic;
-  
-}
-
-.row-1 {
-  grid-area: r1;
-}
-
-.row-2 {
-  grid-area: r2;
-}
-
-.row-3 {
-  grid-area: r3;
-}
-
-h1 {
-  text-align: center;
-}
-
+ 
 .aviso-boleto p {
   background-color: gray;
   color: azure;

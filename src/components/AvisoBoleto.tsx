@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "/src/styles/AvisoBoleto.css";
 
 export default function AvisoBoleto() {
@@ -7,7 +8,6 @@ export default function AvisoBoleto() {
     fornecedor: "",
     nota: "",
     vencimento: "",
-    cod: "",
     parcela: "",
     valor: "",
   });
@@ -25,82 +25,79 @@ export default function AvisoBoleto() {
   };
 
   return (
-    <div className="aviso-boleto">
+    <div>
       <h3>Início do Componente</h3>
       <body>
         <h1>Cadastro de boletos</h1>
-        <form className="container-box" onSubmit={handleSubmit}>
+        <form className="container-box">
           <div>
-            <label>Emissão:</label>
-            <input
-              type="date"
-              name="emissao"
-              value={boleto.emissao}
-              onChange={handleChange}
-              placeholder="Data da Emissão"
-            />
+            <label>
+              Emissão:
+              <input
+                type="date"
+                name="emissao"
+                value={boleto.emissao}
+                onChange={handleChange}
+                placeholder="Data da Emissão"
+              />
+            </label>
           </div>
           <div className="row-2">
-            <label>Código:</label>
-            <input
-              type="number"
-              name="cod"
-              value={boleto.cod}
-              onChange={handleChange}
-              placeholder="Código"
-            />
-            <label>Fornecedor:</label>
-            <input
-              type="text"
-              name="fornecedor"
-              value={boleto.fornecedor}
-              onChange={handleChange}
-              placeholder="Fornecedor"
-            />
-            <label>Nota Fiscal: </label>
-            <input
-              type="number"
-              name="nota"
-              value={boleto.nota}
-              onChange={handleChange}
-              placeholder="Nota Fiscal"
-            />
-            <label>Vencimento: </label>
-            <input
-              type="date"
-              name="vencimento"
-              value={boleto.vencimento}
-              onChange={handleChange}
-              placeholder="Vencimento"
-            />
+            <label>
+              Fornecedor:
+              <input
+                type="text"
+                name="fornecedor"
+                value={boleto.fornecedor}
+                onChange={handleChange}
+                placeholder="Fornecedor"
+              />
+            </label>
+            <label>
+              Nota Fiscal:
+              <input
+                type="number"
+                name="nota"
+                value={boleto.nota}
+                onChange={handleChange}
+                placeholder="Nota Fiscal"
+              />
+            </label>
+            <label>
+              Vencimento:
+              <input
+                type="date"
+                name="vencimento"
+                value={boleto.vencimento}
+                onChange={handleChange}
+                placeholder="Vencimento"
+              />
+            </label>
           </div>
           <div className="row-3">
-            <label>Parcela: </label>
-            <input
-              type="text"
-              name="parcela"
-              value={boleto.parcela}
-              onChange={handleChange}
-              placeholder="Parcela"
-            />
-            <label>Valor: </label>
-            <input
-              type="text"
-              name="valor"
-              value={boleto.valor}
-              onChange={handleChange}
-              placeholder="Valor da Nota"
-            />
+            <label>
+              Parcela:
+              <input
+                type="text"
+                name="parcela"
+                value={boleto.parcela}
+                onChange={handleChange}
+                placeholder="Parcela"
+              />
+            </label>
+            <label>
+              Valor:
+              <input
+                type="text"
+                name="valor"
+                value={boleto.valor}
+                onChange={handleChange}
+                placeholder="Valor da Nota"
+              />
+            </label>
           </div>
-          <button>Submit</button>
+          <button onClick={handleSubmit}>Cadastrar</button>
         </form>
-        <p>Data de emissão: {boleto.emissao}</p>
-        <p>Fornecedor: {boleto.fornecedor}</p>
-        <p>Nota Fiscal: {boleto.nota}</p>
-        <p>Vencimento: {boleto.vencimento}</p>
-        <p>Código: {boleto.cod}</p>
-        <p>Parcela: {boleto.parcela}</p>
-        <p>boleto valor: {boleto.valor}</p>
       </body>
     </div>
   );

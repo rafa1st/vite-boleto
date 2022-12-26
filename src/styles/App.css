@@ -1,7 +1,8 @@
-body {    
+* {    
     margin: auto;
-    padding: 0;
-    background-color: olive;
-    height: 1000px;
+    padding: 0;   
 }
 
+h1 {
+    text-align: center;
+}

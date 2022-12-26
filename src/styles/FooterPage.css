@@ -1,25 +1,15 @@
 footer {
-  background-color: #5e5e5e;
-  color: azure;
+  background-color: #333;
+  color: #f6f6f6;
   text-align: center;
-  height: 50px;
-  position: -webkit-sticky;
-  position: sticky;
+  padding: 10px 0;  
   bottom: 0;
 }
 
-a:link {
+.footer-link {
   text-decoration: none;
-  color: azure;
-  background-color: #5e5e5e;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #ff0101;
+  color: #f6f6f6;
+    
 }
 
 .tooltip {
@@ -31,7 +21,7 @@ a:visited {
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 130px;  
-  background-color: #56547c;
+  background-color: #262626;
   color: azure;
   text-align: center;
   border-radius: 6px;
@@ -51,7 +41,7 @@ a:visited {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #56547c transparent transparent transparent;
+  border-color: #262626 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-text {
