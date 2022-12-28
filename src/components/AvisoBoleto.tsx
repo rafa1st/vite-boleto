@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "/src/styles/AvisoBoleto.css";
 
 export default function AvisoBoleto() {
@@ -98,6 +97,13 @@ export default function AvisoBoleto() {
           </div>
           <button onClick={handleSubmit}>Cadastrar</button>
         </form>
+        
+        <p>emissao: {boleto.emissao}</p>
+        <p>fornecedor: {boleto.fornecedor}</p>
+        <p>nota: {boleto.nota}</p>
+        <p>vencimento: {boleto.vencimento}</p>
+        <p>parcela: {boleto.parcela}</p>
+        <p>valor: {boleto.valor}</p>
       </body>
     </div>
   );
