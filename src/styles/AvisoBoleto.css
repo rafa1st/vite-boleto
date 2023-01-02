@@ -1,39 +1,73 @@
-
 .container-box {
   color: azure;
-  background-color: #256ac4;
+  background-color: #1c1c1c;
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
   border-radius: 15px;
   box-sizing: border-box;
+  margin: 1rem;
   padding: 1rem;
-  width: 100%;
+  
   /* inicio do grid */
-  display: grid;
+  /* display: grid;
   gap: 10px;
-  grid-template-areas: 'r1 r1' 'r2 r3' 'b b';
+  grid-template-areas: 'r1 r1' 'r2 ...' '... r3' 'b b'; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
 }
 
 .container-box div {
-  
+  border-radius: 5px;
+  padding: 1rem;
   /*inicio do flex*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .container-box  div  label {
-  background-color: #c395ff;
-  width: 300px;
+  background-color: #373737;
+  border-radius: 5px;
+  padding: 1rem;
+  gap: 10px;
+
+  /* inicio do flex */
+  display: flex;
+  flex-direction: row; 
 }
  
-.aviso-boleto p {
-  background-color: gray;
-  color: azure;
-}
 
 h3 {
   background-color: #c395ff;
 }
+
+.row-1 {
+  background-color: #c395ff;
+  grid-area: r1;
+}
+
+.row-2 {
+  background-color: aqua;
+  grid-area: r2;
+}
+
+.row-3 {
+    background-color: beige;
+  grid-area: r3;
+}
+
+.container-box button {
+  grid-area: b;
+}
+
+
+@media (max-width: 800px) {
+  .container-box {
+    flex-direction: column;
+  }
 
 /* commentario */

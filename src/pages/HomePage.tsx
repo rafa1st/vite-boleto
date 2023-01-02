@@ -10,6 +10,8 @@ const HomePage = () => {
       <Layout />
      
       <Outlet />
+
+      <Footer />
      
     </>
   );
