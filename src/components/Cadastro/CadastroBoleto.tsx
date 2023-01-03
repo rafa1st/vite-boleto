@@ -30,8 +30,8 @@ export default function CadastroBoleto() {
 
   return (
     <div>
-      <h3>Início do Componente</h3>
-      <h1>Cadastro de boletos</h1>
+      <h3>Cadastro de Boletos</h3>
+      
       <form className="container-box">
         <div className="row-1">
           <label>

@@ -1,21 +1,17 @@
-import { Outlet }from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Footer from "../../components/Footer/FooterPage";
 import Menu from "../../components/Menu/Menu";
 
-import "./Home.css"
-
+import "./Home.css";
 
 const Home = () => {
-  return (
-    <>
+    return (
+    <div className="home">
       <h1>Vite Boleto</h1>
       <Menu />
-      <div className="home">     
       <Outlet />
-      </div>
-     
       <Footer />
-    </>
+    </div>
   );
 };
 

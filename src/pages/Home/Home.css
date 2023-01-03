@@ -1,8 +1,10 @@
 .home {
-    background-color: blueviolet;
-    padding: 20px;
-    height: 700px;
-    max-height: fit-content;
-    
+  background-color: #dec2f8;
+  display: grid;
+  grid-template-rows: 50px 40px auto 40px;
+  min-height: 100vh;
+}
 
+.home h1 {
+    text-align: center;
 }

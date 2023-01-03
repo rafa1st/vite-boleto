@@ -6,10 +6,10 @@ const Dashboard = () => {
 
 
   return (
-    <>
-      <h1>Dashboard</h1>
+    <div>
+      <h3>Dashboard</h3>
       <p>{state}</p>
-    </>
+    </div>
   );
 };
 

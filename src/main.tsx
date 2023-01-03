@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Cadastro from "./pages/Cadastro";
-import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home/Home";
-import NoPage from "./pages/NoPage";
+import Dashboard from "./pages/Dashboard";
+import Cadastro from "./pages/Cadastro";
+import About from "./pages/About/About";
 import PrintPage from "./pages/PrintPage";
+import NoPage from "./pages/NoPage";
 
 import "./styles/Global.css";
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/print" element={<PrintPage />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
