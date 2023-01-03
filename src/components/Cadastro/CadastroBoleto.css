@@ -43,10 +43,12 @@
 
 h3 {
   background-color: #c395ff;
+  color: azure;
+  text-align: center;
 }
 
 .row-1 {
-  background-color: #c395ff;
+  background-color: lightcoral;
   grid-area: r1;
 }
 
@@ -65,9 +67,5 @@ h3 {
 }
 
 
-@media (max-width: 800px) {
-  .container-box {
-    flex-direction: column;
-  }
 
 /* commentario */

@@ -1,6 +1,6 @@
 footer {
-  background-color: #333;
-  color: #f6f6f6;
+  background-color: #373737;
+  color: azure;
   text-align: center;
   padding: 10px 0;  
   bottom: 0;
@@ -21,7 +21,7 @@ footer {
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 130px;  
-  background-color: #262626;
+  background-color: #1c1c1c;
   color: azure;
   text-align: center;
   border-radius: 6px;
@@ -41,7 +41,7 @@ footer {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #262626 transparent transparent transparent;
+  border-color: #1c1c1c transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-text {

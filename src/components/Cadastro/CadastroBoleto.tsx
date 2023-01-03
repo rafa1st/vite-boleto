@@ -1,7 +1,9 @@
 import { useState } from "react";
-import "/src/styles/AvisoBoleto.css";
+import { useNavigate } from "react-router-dom";
 
-export default function AvisoBoleto() {
+import "./CadastroBoleto.css";
+
+export default function CadastroBoleto() {
   const [boleto, setBoleto] = useState({
     emissao: "",
     fornecedor: "",
@@ -13,6 +15,7 @@ export default function AvisoBoleto() {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    navigate("/print", { state: boleto });
   };
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -23,7 +26,7 @@ export default function AvisoBoleto() {
     }));
   };
 
-  // const 
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -96,15 +99,8 @@ export default function AvisoBoleto() {
             />
           </label>
         </div>
-        <button onClick={handleSubmit}>Cadastrar</button>
+        <button onClick={handleSubmit}>Imprimir</button>
       </form>
-
-      <p>emissao: {boleto.emissao}</p>
-      <p>fornecedor: {boleto.fornecedor}</p>
-      <p>nota: {boleto.nota}</p>
-      <p>vencimento: {boleto.vencimento}</p>
-      <p>parcela: {boleto.parcela}</p>
-      <p>valor: R$ {boleto.valor}</p>
     </div>
   );
 }

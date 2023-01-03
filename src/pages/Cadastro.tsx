@@ -1,10 +1,10 @@
-import AvisoBoleto from "../components/AvisoBoleto";
+import CadastroBoleto from "../components/Cadastro/CadastroBoleto";
 
 
 const Cadastro = () => {
     return (
         <>
-        <AvisoBoleto />
+        <CadastroBoleto />        
         </>
     )
 };
