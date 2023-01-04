@@ -6,23 +6,24 @@ import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard";
 import Cadastro from "./pages/Cadastro";
 import About from "./pages/About/About";
-import PrintPage from "./pages/PrintPage";
+import Print from "./pages/Print/Print";
 import NoPage from "./pages/NoPage";
 
 import "./styles/Global.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/print" element={<PrintPage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>          
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+
+        <Route path="/print" element={<Print />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

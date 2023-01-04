@@ -12,7 +12,9 @@ export default function CadastroBoleto() {
     parcela: "",
     valor: "",
   });
-
+  
+  const navigate = useNavigate();
+  
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     navigate("/print", { state: boleto });
@@ -26,7 +28,6 @@ export default function CadastroBoleto() {
     }));
   };
 
-  const navigate = useNavigate();
 
   return (
     <div>

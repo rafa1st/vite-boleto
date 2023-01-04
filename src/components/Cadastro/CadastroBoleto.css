@@ -2,21 +2,14 @@
   color: azure;
   background-color: #1c1c1c;
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
-  border-radius: 15px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin: 1rem;
   padding: 1rem;
-  
-  /* inicio do grid */
-  /* display: grid;
-  gap: 10px;
-  grid-template-areas: 'r1 r1' 'r2 ...' '... r3' 'b b'; */
 
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-
 }
 
 .container-box div {
@@ -29,7 +22,7 @@
   gap: 10px;
 }
 
-.container-box  div  label {
+.container-box div label {
   background-color: #373737;
   border-radius: 5px;
   padding: 1rem;
@@ -37,9 +30,8 @@
 
   /* inicio do flex */
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
- 
 
 .container-box h3 {
   background-color: #c395ff;
@@ -58,14 +50,12 @@
 }
 
 .row-3 {
-    background-color: beige;
+  background-color: beige;
   grid-area: r3;
 }
 
 .container-box button {
   grid-area: b;
 }
-
-
 
 /* commentario */
