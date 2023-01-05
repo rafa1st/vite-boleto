@@ -1,16 +1,18 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../../components/Footer/FooterPage";
 
-import Menu from "../../components/Menu/Menu";
+import Menu from "../../components/Menu";
 
-import "./Home.css";
+import "./styles.css";
 
 const Home = () => {
   return (
     <div className="home">
       <h1>Vite Boleto</h1>
-      <Menu />      
-      <Outlet />
+      <Menu />
+      <div className="display" >
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

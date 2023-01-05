@@ -92,7 +92,7 @@ export default function CadastroBoleto() {
           <label>
             Valor:
             <input
-              type="text"
+              type="number"
               name="valor"
               value={boleto.valor}
               onChange={handleChange}
