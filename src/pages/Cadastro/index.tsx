@@ -1,4 +1,4 @@
-import CadastroBoleto from "../components/Cadastro/CadastroBoleto";
+import CadastroBoleto from "../../components/Cadastro";
 
 
 const Cadastro = () => {

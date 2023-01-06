@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "./CadastroBoleto.css";
+import "./styles.css";
 
 export default function CadastroBoleto() {
   const [boleto, setBoleto] = useState({
