@@ -1,11 +1,14 @@
-.home {
-  background-color: #dec2f8;
+.home {  
   display: grid;
-  grid-template-rows: 50px 40px auto 40px;
+  grid-template-rows: 50px 30px auto 40px;
   min-height: 100vh;
 }
 .display {
-  background-color: #008000;
+  background-color: #04AA6D;
   padding: 10px;
   color: azure;
+}
+
+.home h1 {
+  color: #04AA6D;
 }

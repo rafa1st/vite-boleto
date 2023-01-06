@@ -12,8 +12,6 @@ import Print from "./pages/Print";
 import Calculate from "./pages/Calculate"; 
 import NotFound from "./pages/NotFound";
 
-
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>

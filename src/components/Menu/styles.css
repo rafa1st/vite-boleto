@@ -1,16 +1,24 @@
-.layout ul {
-  background-color: #373737;
+.navBar {
+  background-color: #282a36;
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  height: 100%;
-  list-style-type: none;
 }
 
-
-
-.layout a {
+.navBar a {
   text-decoration: none;
   color: azure;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
+.navBar a:hover {
+  background-color: #008dfd;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: #04aa6d;
+  pointer-events: none;
+}
