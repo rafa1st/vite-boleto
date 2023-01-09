@@ -7,29 +7,27 @@ const Print = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
 
-  const handleClick = (e: {preventDefault: () => void}) => {
+  const handleClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    navigate("/");
-  }
-
-
-
-
+    navigate("/cadastro");
+  };
 
   return (
     <div className="print">
       <h3>Imprimir</h3>
       <div>
-      <p>Emissão: {state.emissao}</p>
-      <p>Fornecedor: {state.fornecedor}</p>
-      <p>Nota: {state.nota}</p>
-      <p>Vencimento {state.vencimento}</p>
-      <p>Parcela: {state.parcela}</p>
-      <p>Valor: R$ {state.valor}</p>
-
+        <p>Emissão: {state.emissao}</p>
+        <p>Fornecedor: {state.fornecedor}</p>
+        <p>Nota: {state.nota}</p>
+        <p>Vencimento {state.vencimento}</p>
+        <p>Parcela: {state.parcela}</p>
+        <p>Valor: R$ {state.valor}</p>
       </div>
-      
-      <button type="button" onClick={handleClick}><ArrowLeft className="arrow"/>Voltar</button>
+
+      <button type="button" onClick={handleClick}>
+        <ArrowLeft className="icon-arrow-left" />
+        Voltar
+      </button>
     </div>
   );
 };

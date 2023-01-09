@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Printer } from "react-feather";
 
 import "./styles.css";
 
@@ -100,7 +101,7 @@ export default function CadastroBoleto() {
             />
           </label>
         </div>
-        <button onClick={handleSubmit}>Imprimir</button>
+        <button onClick={handleSubmit}> <Printer className="icon-printer"/>Imprimir</button>
       </form>
     </div>
   );

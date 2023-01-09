@@ -1,32 +1,12 @@
 .print {
-    display: flex;
-    flex-direction: column;
-}
-
-.print button {
-  color: azure;
-  background-color: #008000;
-  border: 2px solid #008000;
-  padding: 10px 20px;  
-  border-radius: 5px;
-  font-weight: bold;
   display: flex;
-  flex-direction: row;
-  align-items: center;  
-  cursor: pointer;
-  transition-duration: 0.3s;
-  align-self: center;
-  
-
+  flex-direction: column;  
 }
 
-.print button:hover {
-  color: #008000;
-  background-color: white;
+.icon-arrow-left {
+  width: 1rem;
 }
 
-.arrow {
-  width: 16px;
-  height: 16px;  
+.print p{
+  background-color: aqua;
 }
-

@@ -18,7 +18,7 @@
   /*inicio do flex*/
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 10px;
 }
 
@@ -41,21 +41,16 @@
 
 .row-1 {
   background-color: lightcoral;
-  grid-area: r1;
 }
 
 .row-2 {
   background-color: aqua;
-  grid-area: r2;
 }
 
 .row-3 {
   background-color: beige;
-  grid-area: r3;
 }
 
-.container-box button {
-  grid-area: b;
+.icon-printer {
+  width: 1rem;
 }
-
-/* commentario */
