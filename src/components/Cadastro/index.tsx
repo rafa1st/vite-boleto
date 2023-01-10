@@ -18,7 +18,7 @@ export default function CadastroBoleto() {
   
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    navigate("/print", { state: boleto });
+    navigate("/print", { state: boleto });    
   };
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
