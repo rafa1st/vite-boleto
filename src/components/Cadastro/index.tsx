@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Printer } from "react-feather";
+import { Printer, Save } from "react-feather";
 
 import "./styles.css";
 
@@ -13,12 +13,12 @@ export default function CadastroBoleto() {
     parcela: "",
     valor: "",
   });
-  
+
   const navigate = useNavigate();
-  
+
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    navigate("/print", { state: boleto });    
+    navigate("/print", { state: boleto });
   };
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -29,12 +29,10 @@ export default function CadastroBoleto() {
     }));
   };
 
-
   return (
     <div>
       <h3>Cadastro de Boletos</h3>
-      
-      <form className="container-box">
+      <form className="container-form">
         <div className="row-1">
           <label>
             Emissão:
@@ -101,7 +99,16 @@ export default function CadastroBoleto() {
             />
           </label>
         </div>
-        <button onClick={handleSubmit}> <Printer className="icon-printer"/>Imprimir</button>
+        <div className="form-buttons">
+          <button className="save-btn" onClick={(e) => e.preventDefault()}>
+            <Save className="icon-feather"/>
+            Salvar
+          </button>
+          <button className="print-btn" onClick={handleSubmit}>
+            <Printer className="icon-feather" />
+            Imprimir
+          </button>
+        </div>
       </form>
     </div>
   );

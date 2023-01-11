@@ -1,4 +1,4 @@
-.container-box {
+.container-form {
   color: azure;
   background-color: #1c1c1c;
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
@@ -12,9 +12,10 @@
   gap: 10px;
 }
 
-.container-box div {
+.container-form div {
   border-radius: 5px;
   padding: 1rem;
+
   /*inicio do flex*/
   display: flex;
   flex-direction: row;
@@ -22,7 +23,7 @@
   gap: 10px;
 }
 
-.container-box div label {
+.container-form div label {
   background-color: #373737;
   border-radius: 5px;
   padding: 1rem;
@@ -33,7 +34,7 @@
   flex-direction: row;
 }
 
-.container-box h3 {
+.container-form h3 {
   background-color: #c395ff;
   color: azure;
   text-align: center;
@@ -51,28 +52,52 @@
   background-color: beige;
 }
 
-.icon-printer {
+.icon-feather {
   width: 1rem;
 }
 
-.container-box button {
-  background-image: linear-gradient(-180deg, #00d775, #00bd68);
-  box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px;
-  color: #ffffff;
+.form-buttons {
+  background-color: #e6e3e3;
+  display: flex;
+  justify-content: center;
+}
+
+.form-buttons button {
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 3px 4px;
   font-weight: bold;
   padding: 6px 20px;
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
-  align-self: center;
+  transition: 0.3s;
   display: flex;
   flex-direction: row;
   align-items: center;
-  transition: 0.3s;
   gap: 10px;
 }
 
-.container-box button:hover {
-  color: #156415;
-  background-image: linear-gradient(180deg, #ffffff, #a8a6a6);
+.print-btn {
+  background-image: linear-gradient(180deg, #69fcc6, #00b975);
 }
+
+.save-btn {
+  background-image: linear-gradient(180deg, #6633ff, #3232ff);
+}
+
+.print-btn:hover,
+.save-btn:hover {
+  opacity: 0.8;
+  box-shadow: rgba(102, 51, 255, 0.9) 0 3px 5px;
+}
+
+/*
+
+background-image: linear-gradient(180deg, #00d775, #00bd68);
+background-image: linear-gradient(180deg, #6633ff, #dc143c);
+
+hover
+color: #04aa6d;
+background-image: linear-gradient(180deg, #cfcfcf, #a8a6a6);
+
+*/

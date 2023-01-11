@@ -16,7 +16,7 @@ const Print = () => {
 
   return (
     <div className="print-container">
-      <button className="print-button" type="button" onClick={handleClick}>
+      <button className="back-btn" type="button" onClick={handleClick}>
         <ArrowLeft className="icon-arrow-left" />
         Voltar
       </button>

@@ -2,25 +2,24 @@ footer {
   background-color: #282a36;
   color: #f0ffff;
   text-align: center;
-  padding: 10px 0;  
+  padding: 10px 0;
   bottom: 0;
 }
 
 .footer-link {
   text-decoration: none;
   color: #f6f6f6;
-    
 }
 
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted #000;
+  border-bottom: 1px dotted #fff;
 }
 
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 130px;  
+  width: 130px;
   background-color: #1c1c1c;
   color: azure;
   text-align: center;
@@ -30,7 +29,7 @@ footer {
   position: absolute;
   bottom: 150%;
   left: 50%;
-  margin-left: -60px;  
+  margin-left: -60px;
 }
 
 .tooltip .tooltip-text::after {

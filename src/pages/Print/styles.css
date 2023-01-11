@@ -6,7 +6,7 @@
   border-bottom: 2px dashed #c6c6c6;
 }
 
-.print-button {
+.back-btn {
   padding: 0 10px;
   cursor: pointer;
   display: flex;
@@ -40,7 +40,7 @@
 
 .signature {  
   margin: 50px;
-  border-bottom: 1px#c6c6c6;
+  border-bottom: 1px #c6c6c6;
   width: 200px;
   display: flex;  
   flex-direction: column;

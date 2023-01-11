@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Vite Boleto</h1>
-      <Menu />
+      <Menu />      
       <div className="display">
         <Outlet />
       </div>
