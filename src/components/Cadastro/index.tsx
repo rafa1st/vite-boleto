@@ -29,6 +29,7 @@ export default function CadastroBoleto() {
     }));
   };
 
+
   return (
     <div>
       <h3>Cadastro de Boletos</h3>
@@ -43,7 +44,7 @@ export default function CadastroBoleto() {
               onChange={handleChange}
               placeholder="Data da Emissão"
             />
-          </label>
+          </label>          
         </div>
         <div className="row-2">
           <label>
@@ -79,13 +80,13 @@ export default function CadastroBoleto() {
         </div>
         <div className="row-3">
           <label>
-            Parcela:
+            Parcelas:
             <input
-              type="text"
+              type="number"
               name="parcela"
               value={boleto.parcela}
               onChange={handleChange}
-              placeholder="Parcela"
+              placeholder="Qtde de Parcelas"
             />
           </label>
           <label>
