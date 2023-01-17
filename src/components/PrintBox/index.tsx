@@ -1,8 +1,8 @@
 import "./styles.css";
+import { convertDate, convertValor } from "../../utils/utils";
 
 const PrintBox = (props: any) => {
-    const {fornecedor, vencimento, parcela, valor, mensagem, convertDate, convertValor} = props;
-    
+  const { fornecedor, vencimento, parcela, valor, mensagem } = props;
 
   return (
     <div className="print-box">

@@ -8,10 +8,10 @@ export default function CadastroBoleto() {
   const [boleto, setBoleto] = useState({
     emissao: "",
     fornecedor: "",
-    nota: "",
+    nota: 0,
     vencimento: "",
-    parcela: "",
-    valor: "",
+    parcela: 1,
+    valor: 0.00,
   });
 
   const navigate = useNavigate();
