@@ -13,4 +13,5 @@ opções para selecionar o prazo de cada boleto, utilizando um seletor.
 ### Vencimentos
 - [ ] impressão de vencimentos separados
 
-### imprimir valores separados em cada repetição do boleto.}
+### Valores
+- [ ] imprimir valores separados em cada repetição do boleto.

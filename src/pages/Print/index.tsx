@@ -19,7 +19,8 @@ const Print = () => {
     navigate("/cadastro");
   };
 
- 
+ // area de funções, testes e outros
+
   //Calculando o valor total divido pelas parcelas
   function calcValorParcela(parcela: number, valor: number) {
     return valor / parcela;
@@ -36,6 +37,7 @@ const Print = () => {
 
   // testes
 
+  
   //render do codigo
   return (
     <div className="print-container">
