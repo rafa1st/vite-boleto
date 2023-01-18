@@ -14,12 +14,10 @@
 
 .container-form div {
   border-radius: 5px;
-  padding: 1rem;
-
   /*inicio do flex*/
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -39,7 +37,7 @@
   color: azure;
   text-align: center;
 }
-
+/* 
 .row-1 {
   background-color: lightcoral;
 }
@@ -50,14 +48,14 @@
 
 .row-3 {
   background-color: beige;
-}
+} */
 
 .icon-feather {
   width: 1rem;
 }
 
 .form-buttons {
-  background-color: #e6e3e3;
+  /* background-color: #e6e3e3; */
   display: flex;
   justify-content: center;
 }
