@@ -1,15 +1,15 @@
-.home {  
+.home {
   display: grid;
   grid-template-rows: 50px 30px auto 40px;
-  min-height: 100vh;  
+  min-height: 100vh;
 }
 
 .home h1 {
-  color: #04AA6D;
+  color: #04aa6d;
 }
 
 .display {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: azure;
   padding: 10px;
 }
