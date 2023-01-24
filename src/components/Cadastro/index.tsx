@@ -5,56 +5,63 @@ import { Printer, Save } from "react-feather";
 import "./styles.css";
 
 export default function CadastroBoleto() {
-  const [boleto, setBoleto] = useState({
-    emissao: "",
-    fornecedor: "",
-    nota: 0,
-    vencimento: "",
-    parcela: 1,
-    valor: 0.00,
+  const [entrada, setEntrada] = useState({
+    nota: {
+      emissao: "",
+      fornecedor: "",
+      numNota: 0,
+      valorNota: 0,
+    },
+    boleto: {
+      quantParcela: 0,
+      primeiroVencimento: "",
+      vencimentos: "",
+      valorParcela: 0.0,
+    },
   });
+
+  const { emissao, fornecedor, numNota, valorNota } = entrada.nota;
+  const { primeiroVencimento, vencimentos, quantParcela, valorParcela } =
+    entrada.boleto;
 
   const navigate = useNavigate();
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    navigate("/print", { state: boleto });
+    navigate("/print", { state: entrada });
   };
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
-    setBoleto((prevState) => ({
+    setEntrada((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-
   return (
     <div>
       <h3>Cadastro de Boletos</h3>
       <form className="container-form">
-        <div className="row-1">
+        <div>
           <label>
             Emissão:
             <input
               type="date"
               name="emissao"
-              value={boleto.emissao}
+              value={emissao}
               onChange={handleChange}
               placeholder="Data da Emissão"
             />
-          </label>          
-        </div>
-        <div className="row-2">
+          </label>
           <label>
-            Fornecedor:
+            Fornecedor
             <input
               type="text"
               name="fornecedor"
-              value={boleto.fornecedor}
+              value={fornecedor}
               onChange={handleChange}
-              placeholder="Fornecedor"
+              placeholder="Nome do fornecedor"
             />
           </label>
           <label>
@@ -62,47 +69,40 @@ export default function CadastroBoleto() {
             <input
               type="number"
               name="nota"
-              value={boleto.nota}
+              value={numNota}
               onChange={handleChange}
-              placeholder="Nota Fiscal"
             />
           </label>
           <label>
-            Vencimento:
+            Valor da Nota:
             <input
-              type="date"
-              name="vencimento"
-              value={boleto.vencimento}
+              type="number"
+              name="valor"
+              value={valorNota}
               onChange={handleChange}
-              placeholder="Vencimento"
             />
           </label>
         </div>
-        <div className="row-3">
-          <label>
+        <div>
+        <label>
             Parcelas:
             <input
               type="number"
               name="parcela"
-              value={boleto.parcela}
+              value={quantParcela}
               onChange={handleChange}
               placeholder="Qtde de Parcelas"
             />
           </label>
           <label>
-            Valor:
-            <input
-              type="number"
-              name="valor"
-              value={boleto.valor}
-              onChange={handleChange}
-              placeholder="Valor da Nota"
-            />
+            Tipo de parcelamento:
+            <option>tipo1</option>
           </label>
         </div>
+        <div></div>
         <div className="form-buttons">
           <button className="save-btn" onClick={(e) => e.preventDefault()}>
-            <Save className="icon-feather"/>
+            <Save className="icon-feather" />
             Salvar
           </button>
           <button className="print-btn" onClick={handleSubmit}>
