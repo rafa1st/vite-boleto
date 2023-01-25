@@ -96,7 +96,9 @@ export default function CadastroBoleto() {
           </label>
           <label>
             Tipo de parcelamento:
+            <select name="" id="">
             <option>tipo1</option>
+            </select>
           </label>
         </div>
         <div></div>
