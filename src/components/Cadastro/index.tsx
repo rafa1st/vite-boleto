@@ -15,8 +15,8 @@ export default function CadastroBoleto() {
     boleto: {
       quantParcela: 0,
       primeiroVencimento: "",
-      vencimentos: "",
-      valorParcela: 0.0,
+      vencimentos: [],
+      valorParcela: [],
     },
   });
 
@@ -38,6 +38,8 @@ export default function CadastroBoleto() {
       [name]: value,
     }));
   };
+
+  console.log(30+50)
 
   return (
     <div>

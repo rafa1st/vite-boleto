@@ -1,5 +1,3 @@
-const { Database } = require("feather-icons-react/build/IconComponents");
-
 const entrada = {
   //objeto que tem as informações da nota
   nota: {
@@ -11,29 +9,27 @@ const entrada = {
   //agora as informações para os boletos
   boleto: {
     parcela: 3, // quantidad e de parcelas se === 1 === única
-    vencimento: [], // lista de vencimentos de cada boleto da nota
-    valorParcela: [], // lista de valores de cada parcela
+    vencimento: [{ id: "", name: "Rafael" }], // lista de vencimentos de cada boleto da nota
+    valorParcela: [
+      { valor: 10.0, dataVencimento: "2023-02-05" },
+      { valor: 20.0, dataVencimento: "2023-03-05" },
+    ], // lista de valores de cada parcela
   },
 };
 
-const { vencimento, parcela, valorParcela } = entrada.boleto;
+const { parcela, vencimento, valorParcela } = entrada.boleto;
+console.log(parcela);
+console.log(vencimento[0].name);
 
-const options = {
-  timeZone: "UTC",
-  dateStyle: "short",
-};
 
-const dataBase = new Date("2023-01-21");
-console.log(dataBase);
-// console.log(dataBase.toLocaleString("pt-BR", options));
+valorParcela.push({
+  valor: 30,
+  dataVencimento: "2023-04-05",
+});
 
-for (i = 0; i < parcela; i++) {
-  dataBase.setDate(dataBase.getDate() + 28)
-  vencimento.push(dataBase.toLocaleDateString())
-  console.log(vencimento[i]);
+for (let i = 0; i < parcela; i++) {
+  console.log(valorParcela[i].valor);
 }
 
-console.log(`formato toLocaleString = ${dataBase.toLocaleString()}`);
-console.log(`formato toLocaleDateString = ${dataBase.toLocaleDateString()}`);
-console.log(`formato toDateString = ${dataBase.toDateString()}`);
-console.log(vencimento)
+console.log(valorParcela);
+console.log(parcela.length)
