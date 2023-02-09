@@ -5,41 +5,49 @@ import { Printer, Save } from "react-feather";
 import "./styles.css";
 
 export default function CadastroBoleto() {
-  const [entrada, setEntrada] = useState({
-    nota: {
-      emissao: "",
-      fornecedor: "",
-      numNota: 0,
-      valorNota: 0,
-    },
-    boleto: {
-      quantParcela: 0,
-      primeiroVencimento: "",
-      vencimentos: [],
-      valorParcela: [],
-    },
+  const [formulario, setFormulario] = useState({
+    emissao: "",
+    fornecedor: "",
+    numNota: 0,
+    valorNota: 0,
+    parcelas: 0,
+    vencimentos: [],
+    valorParcelas: [],
+    tipo: ["tipo1", "tipo2", "tipo3", "tipo4"],
+    prazo: 0,
   });
 
-  const { emissao, fornecedor, numNota, valorNota } = entrada.nota;
-  const { primeiroVencimento, vencimentos, quantParcela, valorParcela } =
-    entrada.boleto;
+  const {
+    emissao,
+    fornecedor,
+    numNota,
+    valorNota,
+    parcelas,
+    vencimentos,
+    valorParcelas,
+    tipo,
+    prazo,
+  } = formulario;
 
   const navigate = useNavigate();
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    navigate("/print", { state: entrada });
+    navigate("/print", { state: formulario });
   };
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
-    setEntrada((prevState) => ({
+    setFormulario((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  console.log(30+50)
+  const handleSave = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    console.log(formulario);
+  };
 
   return (
     <div>
@@ -70,7 +78,7 @@ export default function CadastroBoleto() {
             Nota Fiscal:
             <input
               type="number"
-              name="nota"
+              name="numNota"
               value={numNota}
               onChange={handleChange}
             />
@@ -79,33 +87,39 @@ export default function CadastroBoleto() {
             Valor da Nota:
             <input
               type="number"
-              name="valor"
+              name="valorNota"
               value={valorNota}
               onChange={handleChange}
             />
           </label>
         </div>
         <div>
-        <label>
+          <label>
             Parcelas:
             <input
               type="number"
-              name="parcela"
-              value={quantParcela}
+              name="parcelas"
+              value={parcelas}
               onChange={handleChange}
               placeholder="Qtde de Parcelas"
             />
           </label>
-          <label>
-            Tipo de parcelamento:
-            <select name="" id="">
-            <option>tipo1</option>
-            </select>
-          </label>
+            {/* <label>
+              Tipo de parcelamento:
+              <select name="tipo" onChange={handleChange}>
+                {tipo.map((item, key) => {
+                  return (
+                    <option value={tipo[key]} key={key}>
+                      {item}
+                    </option>
+                  );
+                })}
+              </select>
+            </label> */}
         </div>
         <div></div>
         <div className="form-buttons">
-          <button className="save-btn" onClick={(e) => e.preventDefault()}>
+          <button className="save-btn" onClick={handleSave}>
             <Save className="icon-feather" />
             Salvar
           </button>
