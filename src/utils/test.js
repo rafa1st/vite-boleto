@@ -21,7 +21,6 @@ const { parcela, vencimento, valorParcela } = entrada.boleto;
 console.log(parcela);
 console.log(vencimento[0].name);
 
-
 valorParcela.push({
   valor: 30,
   dataVencimento: "2023-04-05",
@@ -32,4 +31,20 @@ for (let i = 0; i < parcela; i++) {
 }
 
 console.log(valorParcela);
-console.log(parcela.length)
+console.log(parcela.length);
+
+const meuObjeto = {
+  emissao: "",
+  fornecedor: "",
+  numNota: 0,
+  valorNota: 0,
+  parcelas: 0,
+  vencimentos: [],
+  valorParcelas: [],
+  tipo: ["tipo1", "tipo2", "tipo3", "tipo4"],
+  prazo: 0,
+};
+
+const { tipo } = meuObjeto;
+
+console.log(typeof tipo);
