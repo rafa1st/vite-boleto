@@ -48,3 +48,10 @@ const meuObjeto = {
 const { tipo } = meuObjeto;
 
 console.log(typeof tipo);
+
+const hoje = new Date();
+
+console.log(hoje);
+
+const year = hoje.getFullYear();
+console.log(year);

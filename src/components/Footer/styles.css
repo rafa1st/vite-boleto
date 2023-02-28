@@ -20,8 +20,8 @@ footer {
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 130px;
-  background-color: #1c1c1c;
-  color: azure;
+  background-color: azure;
+  color: #1c1c1c;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -40,7 +40,7 @@ footer {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #1c1c1c transparent transparent transparent;
+  border-color: azure transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-text {
