@@ -25,7 +25,7 @@ export default function CadastroBoleto() {
     parcelas,
     vencimentos,
     valorParcelas,
-    tipo,
+    
     prazo,
   } = formulario;
 
@@ -104,18 +104,18 @@ export default function CadastroBoleto() {
               placeholder="Qtde de Parcelas"
             />
           </label>
-            {/* <label>
+            <label>
               Tipo de parcelamento:
-              <select name="tipo" onChange={handleChange}>
-                {tipo.map((item, key) => {
+              <select name="tipo" id="tipo" >
+                {formulario.tipo.map((item, key) => {
                   return (
-                    <option value={tipo[key]} key={key}>
+                    <option value={formulario.tipo[key]} key={key}>
                       {item}
                     </option>
                   );
                 })}
               </select>
-            </label> */}
+            </label>
         </div>
         <div></div>
         <div className="form-buttons">
