@@ -104,18 +104,18 @@ export default function CadastroBoleto() {
               placeholder="Qtde de Parcelas"
             />
           </label>
-            <label>
+            {/* <label>
               Tipo de parcelamento:
               <select name="tipo" id="tipo" >
                 {formulario.tipo.map((item, key) => {
                   return (
-                    <option value={formulario.tipo[key]} key={key}>
+                    <option name="tipo" value={formulario.tipo[key]} key={key}>
                       {item}
                     </option>
                   );
                 })}
               </select>
-            </label>
+            </label> */}
         </div>
         <div></div>
         <div className="form-buttons">

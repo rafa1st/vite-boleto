@@ -41,17 +41,22 @@ const meuObjeto = {
   parcelas: 0,
   vencimentos: [],
   valorParcelas: [],
-  tipo: ["tipo1", "tipo2", "tipo3", "tipo4"],
+  tipo: ["tipo0", "tipo1", "tipo2", "tipo3"],
   prazo: 0,
 };
 
 const { tipo } = meuObjeto;
+const [a, b, c, d] = tipo;
 
-console.log(typeof tipo);
+console.log(a)
 
-const hoje = new Date();
+console.log(typeof tipo[1]);
 
-console.log(hoje);
+console.log(meuObjeto.tipo[2]);
 
-const year = hoje.getFullYear();
-console.log(year);
+meuObjeto.tipo.map((item, key ) => {
+
+  return console.log(item, key) 
+
+
+})

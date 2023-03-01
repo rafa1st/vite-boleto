@@ -1,3 +1,4 @@
+import { Select } from "../../components/Select";
 import "./styles.css";
 
 const About = () => {
@@ -10,6 +11,7 @@ const About = () => {
         quasi nisi numquam, reprehenderit maxime. Aliquam cupiditate iure
         repellendus vitae provident.
       </p>
+      <Select />
     </div>
   );
 };
